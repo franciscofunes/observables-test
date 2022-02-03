@@ -1,0 +1,12 @@
+<div class="personas">
+  <!-- Recorro el array usando el array de personas que definimos como propiedad en el component ts-->
+  <!-- Cada vez que se emita desde el servicion una nueva creacion de persona, cada que lo reciba en el observable 
+    este array va actuar en consecuencia por lo tanto este ngFor se va adaptar al numero de personas que tenga dentro de ese array -->
+  <div class="persona" *ngFor="let persona of arrPersonas">
+    <h3>{{ persona.nombre }} {{ persona.apellido }}</h3>
+    <p>{{ persona.empresa }}</p>
+    <p>{{ persona.email }}</p>
+    <p>{{ persona.telefono }}</p>
+    <!--Lo bueno de usar una interfaz es que si yo me equivoco en algo me va avisar-->
+  </div>
+</div>
